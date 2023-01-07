@@ -1,0 +1,71 @@
+*{
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+body.white{
+    background-color:rgb(136, 223, 226);
+    color: black;
+}
+body.black{
+    background-color:black;
+    color: white;
+}
+table{
+    margin-top: 1%;
+    margin-left: 35%;
+    margin-right: 30%;
+    width: 400px;
+    height: 650px;
+    
+    
+}
+table.white{
+    background-color: aquamarine;
+    border: 2px double green;
+}
+table.black{
+    background-color: rgb(32, 68, 56);
+    border: 2px double purple;
+}
+td{
+    width: 25%;
+    height: 100px;
+}
+td#wynik{
+    width: 100%;
+    
+    user-select: text;
+    padding: 0;
+}
+table.white td#wynik{
+    background-color: burlywood;
+}
+table.black td#wynik{
+    background-color: rgb(175, 115, 37);
+}
+img{
+    float: right;
+    height: 100px;
+}
+
+table.white tr:hover{
+    background-color: rgb(98, 207, 171);
+}
+table.black tr:hover{
+    background-color: rgb(86, 90, 89);
+}
+
+table.white td:hover{
+    background-color: rgb(64, 136, 112);
+}
+table.black td:hover{
+    background-color: rgb(121, 136, 131);
+}

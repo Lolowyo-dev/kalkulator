@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="white" id="body">
+    <img src="mode1.png" alt="zmiana kolorów" id="tryb" onclick="zmiana()">
+    <table class="white" id="tabelka">
+        <tr>  <td id="wynik" colspan="4"></td>  </tr>
+        <tr>  <td onclick="wpisz('CE')">CE</td>  <td onclick="wpisz('C')">C</td>  <td onclick="wpisz('as')">&Leftarrow;</td>  <td onclick="wpisz('/')">&divide;</td>  </tr>
+        <tr>  <td onclick="wpisz('7')">7</td>  <td onclick="wpisz('8')">8</td>  <td onclick="wpisz('9')">9</td>  <td onclick="wpisz('*')">&Cross;</td>  </tr>
+        <tr>  <td onclick="wpisz('4')">4</td>  <td onclick="wpisz('5')">5</td>  <td onclick="wpisz('6')">6</td>  <td onclick="wpisz('-')">&minus;</td>  </tr>
+        <tr>  <td onclick="wpisz('1')">1</td>  <td onclick="wpisz('2')">2</td>  <td onclick="wpisz('3')">3</td>  <td onclick="wpisz('+')">&plus;</td>  </tr>
+        <tr>  <td onclick="wpisz('+-')">+/-</td>  <td onclick="wpisz('0')">0</td>  <td onclick="wpisz(',')">,</td>  <td onclick="wpisz('=')">&equals;</td>  </tr>
+    </table>
+
+</body>
+</html>
