@@ -2,19 +2,19 @@ var a=1;
 var b=1;
 var c=1;
 function zmiana(){
-    if(a==1)
+    if(a==0)
     {
-        document.getElementById('tryb').src='mode2.png';
+        document.getElementById('tryb').src='img/mode2.png';
         document.getElementById('tabelka').className='black'
         document.getElementById('body').className='black'
-        a=0;
+        a=1;
     }
     else
     {
-        document.getElementById('tryb').src='mode1.png';
+        document.getElementById('tryb').src='img/mode1.png';
         document.getElementById('tabelka').className='white'
         document.getElementById('body').className='white'
-        a=1;
+        a=0;
     }
 }
 var d = '';
