@@ -28,11 +28,11 @@ var l = 0;
 function wpisz(x){
     switch(x){
         case '=': y=parseInt(y,10);z=parseInt(z,10);
-        if(znak=='&divide;')if(z==0){y='Nie można ';znak='dzielić ';z='przez ';wynik='zero';}else wynik=y/z;
         if(znak=='&Cross;') wynik=y*z;
         if(znak=='&minus;') wynik=y-z;
         if(znak=='&plus;') wynik=y+z;
-        wynik = "="+wynik;
+        if(znak=='&divide;')if(z==0){y='Nie można dzielić przez zero';znak='';z='';wynik='';}else wynik=y/z;
+        if(znak!='&divide;' && z!=0) wynik = "= "+wynik;
         break;
         case 'CE': 
         y = '';
@@ -115,6 +115,6 @@ function wpisz(x){
         case '8': if(znak1==0){d=y;y=y+x;}else{d=z;z=z+x;} break;
         case '9': if(znak1==0){d=y;y=y+x;}else{d=z;z=z+x;} break;
     }
-    document.getElementById('wynik').innerHTML=y+znak+z+wynik;
+    document.getElementById('wynik').innerHTML=y+' '+znak+' '+z+wynik;
     
 }
