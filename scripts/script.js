@@ -31,10 +31,10 @@ function wpisz(x){
         if(znak=='&Cross;') wynik=y*z;
         if(znak=='&minus;') wynik=y-z;
         if(znak=='&plus;') wynik=y+z;
-        if(znak=='&divide;')if(z==0){y='Nie można dzielić przez zero';znak='';z='';wynik='';}else wynik=y/z;
+        if(znak=='&divide;')if(z==0){y='Nie można dzielić przez ';znak='';z='zero';wynik='';}else wynik=y/z;
         
         wynik = " = "+wynik;
-        if(znak=='&divide;' && z==0) wynik = "";
+        if(znak=='&divide;' && z=='zero') wynik = "";
         break;
         case 'CE': 
         y = '';
