@@ -32,7 +32,9 @@ function wpisz(x){
         if(znak=='&minus;') wynik=y-z;
         if(znak=='&plus;') wynik=y+z;
         if(znak=='&divide;')if(z==0){y='Nie można dzielić przez zero';znak='';z='';wynik='';}else wynik=y/z;
-        if(znak!='&divide;' && z!=0) wynik = "= "+wynik;
+        
+        wynik = " = "+wynik;
+        if(znak=='&divide;' && z==0) wynik = "";
         break;
         case 'CE': 
         y = '';
