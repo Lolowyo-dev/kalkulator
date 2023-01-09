@@ -34,7 +34,7 @@ function wpisz(x){
         if(znak=='&divide;')if(z==0){y='Nie można dzielić przez ';znak='';z='zero';wynik='';}else wynik=y/z;
         
         wynik = " = "+wynik;
-        if(znak=='&divide;' && z=='zero') wynik = "";
+        if(z=='zero') wynik = "";
         break;
         case 'CE': 
         y = '';
